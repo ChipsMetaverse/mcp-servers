@@ -15,7 +15,7 @@ To install all MCP servers globally, run:
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/mcp-servers.git
+git clone https://github.com/ChipsMetaverse/mcp-servers.git
 cd mcp-servers
 
 # Optional: Set environment variables for API keys
