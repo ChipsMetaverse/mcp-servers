@@ -1,0 +1,43 @@
+{
+  "github": {
+    "access_token": "YOUR_GITHUB_TOKEN_HERE",
+    "permissions": {
+      "repo": "all",
+      "admin:org": "all",
+      "user": "all",
+      "workflow": "write",
+      "delete_repo": true
+    },
+    "scopes": [
+      "repo",
+      "workflow",
+      "admin:org",
+      "user",
+      "delete_repo"
+    ],
+    "note": "This token provides full access to repositories, organizations, and user data. Use with caution."
+  },
+  "braveSearch": {
+    "apiKey": "YOUR_BRAVE_API_KEY_HERE",
+    "enabled": true,
+    "name": "Brave Search",
+    "description": "Search the web using Brave Search API"
+  },
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"]
+    },
+    "braveSearch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY_HERE"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://postgres:postgres@localhost:54322/postgres"]
+    }
+  }
+} 
